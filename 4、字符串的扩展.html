@@ -92,6 +92,10 @@
       )
       .join('')}
      </table>`
-    console.log(tmpl)
+    const data = [
+      { first: '<Jane>', last: 'Bond' },
+      { first: 'Lars', last: '<Croft>' }
+    ]
+    console.log(tmpl(data))
   </script>
 </html>
