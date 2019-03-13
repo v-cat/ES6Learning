@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    1、二进制和八进制表示法<br />
+    2、Number.isFinite(), Number.isNaN()<br />
+    3、Number.parseInt(), Number.parseFloat()<br />
+    4、Number.isInteger()<br />
+    5、Number.EPSILON <br />
+    6、安全整数和 Number.isSafeInteger() <br />
+    7、Math 对象的扩展<br />
+    8、指数运算符
+  </body>
+  <script>
+    // 7、  Math 对象的扩展
+    // Math.trunc方法用于去除一个数的小数部分，返回整数部分。
+    console.log(Math.trunc(5.322))
+    console.log(Math.trunc(true))
+    console.log(Math.sign(5.322))
+    // Math.cbrt方法用于计算一个数的立方根
+    console.log(Math.cbrt(36))
+    // Math.hypot方法返回所有参数的平方和的平方根
+    console.log(
+      Math.hypot(3, 4),
+      Math.hypot(3, 4, 5),
+      Math.hypot(),
+      Math.hypot(NaN),
+      Math.hypot(3, 4, 'foo'),
+      Math.hypot(3, 4, '5'),
+      Math.hypot(-3)
+    )
+    //     Math.sinh(x) 返回x的双曲正弦（hyperbolic sine）
+    //     Math.cosh(x) 返回x的双曲余弦（hyperbolic cosine）
+    //     Math.tanh(x) 返回x的双曲正切（hyperbolic tangent）
+    //     Math.asinh(x) 返回x的反双曲正弦（inverse hyperbolic sine）
+    //     Math.acosh(x) 返回x的反双曲余弦（inverse hyperbolic cosine）
+    //     Math.atanh(x) 返回x的反双曲正切（inverse hyperbolic tangent）
+  </script>
+</html>
