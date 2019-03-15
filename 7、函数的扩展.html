@@ -17,6 +17,9 @@
       7、 尾调用优化<br />
       8、函数参数的尾逗号
     </div>
+    <div class="clickMe">
+      click
+    </div>
   </body>
   <script>
     function log(x, y) {
@@ -65,5 +68,27 @@
 
     m1({ z: 3 }) // [0, 0]
     m2({ z: 3 }) // [undefined, undefined]
+    // 箭头函数
+    // var result = values.sort((a, b) => a - b)
+    var clickMe = document.getElementsByClassName('clickMe')
+    console.log(clickMe)
+    console.log(clickMe instanceof Array)
+    var handler = {
+      id: '2333',
+      init: function() {
+        document.getElementsByClassName('clickMe')[0].addEventListener(
+          'click',
+          event => {
+            console.log(this)
+            // this.doSomething(event.type)
+          },
+          false
+        )
+      },
+      doSomething: function(type) {
+        console.log('handling' + type + 'for' + this.id)
+      }
+    }
+    handler.init()
   </script>
 </html>
